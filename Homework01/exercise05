@@ -1,0 +1,17 @@
+userNumb = input("Введите ваше число: ")
+charList = ["1","2","3","4","5","6","7","8","9","0","."]
+
+# Проверка на положительное вещественное число  
+isFu = False
+
+#проходим каждый символ и сравниваем с листом
+for i in userNumb:
+    if i not in charList:
+        break
+    else:
+        isFu = True
+
+if isFu == True and userNumb.count(".") < 2: 
+    print("Вещественное число") 
+else:
+    print("НЕ!!! Вещественное число") 
